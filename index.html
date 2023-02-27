@@ -1,5 +1,7 @@
 <!-- création attribut lang dans html -->
 <!-- ajout d'un titre dans balise head -->
+<!-- ajout des balises meta en rapport avec Instagram -->
+<!-- ajout des balises meta locales -->
 <!-- déplacement des scripts en bas de page -->
 <!-- modification sémantique html -->
 <!-- redimensionnement et ajout des alt de toutes les images-->
@@ -7,7 +9,31 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <!-- meta local -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Découvrez les photographies artistiques de Nina Carducci, photographe spécialisée dans la capture des moments marquant de votre vie permettant ainsi d'immortaliser vos souvenirs."
+    />
+    <meta
+      name="keywords"
+      content="photographe Bordeaux, photographe professionnel, photographie, artistique, moments, émotions, lieux, souvenirs, Nina Carducci"
+    />
+    <!-- meta instagram -->
+    <meta property="og:title" content="Photographe Nina Carducci" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://jeromedaut.github.io/Photographie-Carducci/"
+    />
+    <meta property="og:image" content="./assets/images/nina.webp" />
+    <meta
+      property="og:description"
+      content="Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer."
+    />
+    <meta property="og:site_name" content="Photographe Nina Carducci" />
+    <!-- links -->
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,7 +42,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     />
-    <meta charset="UTF-8" />
 
     <title>Photographe Nina Carducci</title>
   </head>
@@ -291,6 +316,14 @@
               rows="10"
             ></textarea>
             <input type="submit" value="Envoyer" />
+            <p>Une autre demande?</p>
+            <address>
+              Mon adresse: 68 rue Alsace-Lorraine, 33200 Bordeaux <br />
+              Mon numéro de téléphone:
+              <a href="tel:+33556677889">05 56 67 78 89</a><br />
+              Les horaires d'ouverture: du lundi au vendredi de 10 heure a 19
+              heure.
+            </address>
           </form>
         </div>
         <div class="picture right">

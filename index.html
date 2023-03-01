@@ -1,13 +1,15 @@
 <!-- création attribut lang dans html -->
-<!-- ajout d'un titre dans balise head -->
+<!-- ajout d'un titre avec mot-clé dans balise head -->
 <!-- ajout des balises meta en rapport avec Instagram -->
-<!-- ajout des balises meta locales -->
+<!-- ajout des balises meta ref locales -->
 <!-- déplacement des scripts en bas de page -->
-<!-- modification sémantique html -->
+<!-- modification sémantique html (Wave ok) -->
 <!-- redimensionnement et ajout des alt de toutes les images-->
+<!-- changement de la version de Jquery -->
+<!-- balise script de schema.org -->
 
 <!DOCTYPE html>
-<html lang="fr" xmlns:og="http://ogp.me/ns#">
+<html lang="fr">
   <head>
     <!-- meta local -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -42,23 +44,40 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     />
-    <!-- <script type="application/ld+json">
+    <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
+        "@type": "Photographer",
         "name": "Nina Carducci",
-        "jobTitle": "Photographe",
         "url": "https://jeromedaut.github.io/Photographie-Carducci/",
-        "sameAs": ["https://www.instagram.com/ninacarducci.photo/?hl=fr"],
         "image": {
           "@type": "ImageObject",
           "url": "./assets/images/nina.webp",
           "width": "300",
           "height": "300"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 rue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "FR"
+        },
+        "telephone": "+33556677889",
+        "openingHoursSpecification": [
+        {
+        "@type": "OpeningHoursSpecification",
+        "openingHours": [
+          "Lundi 10:00-19:00",
+          "Mardi 10:00-19:00",
+          "Mercredi 10:00-19:00",
+          "Jeudi 10:00-19:00",
+          "Vendredi 10:00-19:00"
+        ]
         }
       }
-    </script> -->
-    <title>Photographe Nina Carducci</title>
+    </script>
+    <title>Photographe Nina Carducci - Photographies artistiques à Bordeaux</title>
   </head>
   <body>
     <header class="top-header">
@@ -81,6 +100,7 @@
       </nav>
     </header>
     <section id="header">
+    <main>
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -255,7 +275,7 @@
       </aside>
     </section>
     <section id="services">
-      <h3 class="title">Mes services</h3>
+      <h2 class="title">Mes services</h2>
       <article class="container">
         <div class="service">
           <div class="service__description">
@@ -302,15 +322,16 @@
     <aside class="quote">
       <figure>
         <blockquote>
-          <h1 class="quote__text">
+          <p class="quote__text">
             De manière inconsciente, je crois, je guette un regard, une
             expression, des traits ou une nostalgie capable de résumer ou plus
             exactement de révéler une vie
-          </h1>
+          </p>
         </blockquote>
         <figcaption class="quote__author">- Richard Avedon</figcaption>
       </figure>
     </aside>
+  </main>
     <footer id="contact">
       <div class="container">
         <div class="form-container">
@@ -351,9 +372,14 @@
       </div>
     </footer>
     <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-    <script
+    <!-- <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"
     ></script>
     <script src="./assets/maugallery.min.js"></script>

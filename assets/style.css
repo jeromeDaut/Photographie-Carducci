@@ -56,9 +56,9 @@ body {
   color: #000;
 }
 
-.social-link img {
+/* .social-link img {
   width: 20px;
-}
+} */
 
 #about {
   display: flex;
@@ -71,8 +71,8 @@ body {
 .picture.left::before {
   content: " ";
   background-color: #e5975f;
-  width: 374px;
-  height: 329px;
+  width: 365px;
+  height: 364px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -85,9 +85,9 @@ body {
   z-index: 0;
 }
 
-.picture img {
+/* .picture img {
   width: 100%;
-}
+} */
 #about-me {
   flex: 2;
 }
